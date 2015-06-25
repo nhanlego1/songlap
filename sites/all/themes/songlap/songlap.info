@@ -12,7 +12,7 @@ base theme = omega
 
 ;ADD JS TO THEME
 
-scripts[] = js/mercvn.js
+;scripts[] = js/mercvn.js
 
 ; REQUIRED CORE REGIONS
 
