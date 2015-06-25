@@ -1,0 +1,11 @@
+name = Merc Global
+description = Global setting for Mercvn.
+core = 7.x
+package = Merc
+
+
+; Information added by Drupal.org packaging script on 2014-11-19
+version = "7.x-1.5"
+core = "7.x"
+project = "merc"
+datestamp = "1416423525"

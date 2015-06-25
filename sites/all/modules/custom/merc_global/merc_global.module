@@ -1,0 +1,313 @@
+<?php
+/**
+ * Created by JetBrains PhpStorm.
+ * User: nhan
+ * Date: 1/15/15
+ * Time: 7:53 AM
+ * To change this template use File | Settings | File Templates.
+ */
+
+function merc_global_menu()
+{
+    $items['admin/portal/dashboard'] = array(
+        'title' => 'Admin Dashboard',
+        'page callback' => 'merc_global_admin_dashboard',
+        'access arguments' => array('admin dashboard'),
+        'type' => MENU_LOCAL_ACTION,
+        'weight' => 1,
+    );
+
+
+    return $items;
+}
+
+function merc_global_permission() {
+    return array(
+        'admin dashboard' => array(
+            'title' => t('Administer dashboard'),
+            'description' => t('Perform administration tasks for my module.'),
+        ),
+    );
+}
+
+
+/*
+ * Implement Hook_outbound_alter
+ */
+function merc_global_url_outbound_alter(&$path, &$options, $original_path) {
+  //change alias for news
+  if (preg_match('|^new/([0-9]*)|', $path, $matches)) {
+    $alias = drupal_lookup_path('alias','taxonomy/term/'.$matches[1]);
+    $path = 'new/'.$alias;
+  }
+    if (preg_match('|^brand/([0-9]*)|', $path, $matches)) {
+        $alias = drupal_lookup_path('alias','taxonomy/term/'.$matches[1]);
+        $path = 'brand/'.$alias;
+    }
+}
+
+function merc_global_url_inbound_alter(&$path, $original_path, $path_language) {
+    //back original for news
+    if (preg_match('|^brand/(.+)|', $path, $matches)) {
+        $url = drupal_lookup_path('source',$matches[1]);
+        $t = explode('/',$url);
+        $tid = $t[2];
+        $path = 'brand/'. $tid;
+    }
+    if (preg_match('|^new/(.+)|', $path, $matches)) {
+        $url = drupal_lookup_path('source',$matches[1]);
+        $t = explode('/',$url);
+        $tid = $t[2];
+        $path = 'new/'. $tid;
+    }
+}
+
+/**
+ * Implement hook_block
+ */
+function merc_global_block_info() {
+
+    $blocks['merc_global_category_list'] = array(
+        'info' => t('Merc category list'),
+    );
+    $blocks['merc_global_brand_list'] = array(
+        'info' => t('Merc brand list'),
+    );
+    $blocks['merc_global_order'] = array(
+        'info' => t('Merc order form'),
+    );
+    $blocks['merc_global_bg_form'] = array(
+        'info' => t('Merc bg form'),
+    );
+    $blocks['merc_global_cart'] = array(
+        'info' => t('Merc cart'),
+    );
+    $blocks['merc_global_user'] = array(
+        'info' => t('Merc User'),
+    );
+    return $blocks;
+}
+
+/*
+ * Hook Block View
+ */
+function merc_global_block_view($delta = '') {
+    $block = array();
+
+    switch($delta) {
+        case 'merc_global_category_list':
+            $block['subject'] = '';
+            $block['content'] = merc_global_category_list();
+            break;
+        case 'merc_global_brand_list':
+            $block['subject'] = '';
+            $block['content'] = merc_global_brand_list();
+            break;
+        case 'merc_global_order':
+            $block['subject'] = '';
+            $block['content'] = merc_global_order();
+            break;
+        case 'merc_global_bg_form':
+            $block['subject'] = '';
+            $block['content'] = drupal_get_form('merc_global_bg_form');
+            break;
+        case 'merc_global_cart':
+            $block['subject'] = '';
+            $block['content'] = merc_global_cart();
+            break;
+        case 'merc_global_user':
+            $block['subject'] = '';
+            $block['content'] = merc_global_user();
+            break;
+    }
+    return $block;
+}
+/*
+ * Category list
+ */
+function merc_global_category_list(){
+    $voca = taxonomy_vocabulary_machine_name_load('product');
+    $terms = taxonomy_get_tree($voca->vid);
+    $output = '';
+    $output .='<div class="category-list-wrapper">';
+    foreach($terms as $term){
+       if($term->parents[0]==0){
+           $output .= '<h2 class="block-title">'.$term->name.'</h2>';
+           $children = taxonomy_get_children($term->tid);
+           $output .= "<ul>";
+           foreach($children as $child){
+               $term_child = taxonomy_term_load($child->tid);
+               $output .='<li class="cate-item">'.l($term_child->name,'taxonomy/term/'.$term_child->tid).'</li>';
+
+           }
+           $output .='</ul>';
+       }
+    }
+
+    $output .='</div>';
+    return $output;
+}
+/*
+ * Brand list
+ */
+function merc_global_brand_list(){
+    $voca = taxonomy_vocabulary_machine_name_load('product');
+    $terms = taxonomy_get_tree($voca->vid);
+    $output = '';
+    $output .='<div class="brands-list-wrapper">';
+    $class= '';
+    foreach($terms as $term){
+        if($term->parents[0]==0){
+            if(arg(1) == $term->tid){
+                $output .= '<h2 class="block-title active">'.l($term->name,'brand/'.$term->tid).'</h2>';
+            }else{
+                $output .= '<h2 class="block-title ">'.l($term->name,'brand/'.$term->tid).'</h2>';
+            }
+
+        }
+    }
+
+    $output .='</div>';
+    return $output;
+}
+
+/*
+ * Order webform
+ */
+function merc_global_order(){
+    $node = node_load(162);
+    $form =  drupal_get_form('webform_client_form_162',$node,array());
+    return $form;
+
+}
+
+/*
+ * Implement hook_form_alter
+ */
+
+function merc_global_form_alter(&$form, &$form_state, $form_id){
+    if($form['#id'] == 'views-exposed-form-promotion-product-page-4'){
+       $form['title']['#attributes']['placeholder'] = 'Tìm kiếm sản phẩm';
+       $form['category']['#options']['All'] = 'Chuyên mục';
+    }if($form['#id'] == 'views-exposed-form-promotion-product-block-1' || $form['#id'] == 'views-exposed-form-promotion-product-page-1'){
+        $form['field_brand_tid']['#options']['All'] = 'Tất Cả';
+    }
+    if($form_id == 'webform_client_form_2' ){
+        $form['actions']['submit']['#value'] = 'Gửi';
+    }
+    if($form_id == 'webform_client_form_162'){
+        $form['actions']['submit']['#value'] = 'Gửi';
+        $node = menu_get_object('node');
+        $product = commerce_product_load($node->field_product[LANGUAGE_NONE][0]['product_id']);
+        $form['submitted']['model']['#default_value'] = $product->sku;
+        //dsm($product);
+    }
+}
+
+
+/*
+ * BG form
+ */
+function merc_global_bg_form($form, &$form_state){
+    $node = merc_global_get_bg();
+    if($node){
+        $url = file_create_url($node->field_background_image[LANGUAGE_NONE][0]['uri']);
+    }else{
+      $url = 0;
+    }
+   $form['bg'] = array(
+       '#type' => 'hidden',
+       '#value' =>$url,
+       '#attributes' => array('class'=>array('bg-slide-show'))
+   );
+    return $form;
+}
+
+/*
+ * Get latest bg
+ */
+function merc_global_get_bg(){
+    $query = db_select('node','n');
+    $query->fields('n');
+    $query->condition('type','background_slideshow','=');
+    $query->condition('status',1,'=');
+    $query->orderBy('created','DESC');
+    $query->range(0,1);
+    $result = $query->execute()->fetchObject();
+    if($result){
+        return node_load($result->nid);
+    }else{
+        return false;
+    }
+}
+
+/*
+ * Implement hook_theme
+ */
+
+function merc_global_theme() {
+    return array(
+        'merc_global_panel' => array(
+            'render element' => 'element',
+            'template' => 'theme/merc-global-panel',
+        ),
+
+    );
+}
+
+function merc_global_admin_dashboard(){
+    global $user;
+    drupal_add_css(drupal_get_path('module','merc_global').'/admin_panel/admin-panel.css');
+    return array('#theme' => 'merc_global_panel');
+}
+
+/*
+ * cart
+ */
+function merc_global_cart(){
+    global $user;
+    $order = commerce_cart_order_load($user->uid);
+    $output = '';
+    if($order){
+        $wrapper = entity_metadata_wrapper('commerce_order', $order);
+        $line_items = $wrapper->commerce_line_items;
+        $quantity = commerce_line_items_quantity($line_items, commerce_product_line_item_types());
+        $order_total = $wrapper->commerce_order_total->value();
+        $output = '';
+        if($quantity > 0){
+            $output .= '<a href="/cart"><div class="cart-wrapper"><b>Giỏ hàng:</b> '.commerce_currency_format($order_total['amount'], $order_total['currency_code']).' ('.$quantity.')'.'</div></a>';
+        }else{
+            $output .= '<div class="cart-wrapper"><b>Giỏ hàng:</b> 0đ (0)'.'</div>';
+        }
+
+
+    }else{
+        $output .= '<div class="cart-wrapper"><b>Giỏ hàng:</b> 0đ (0)'.'</div>';
+    }
+    return $output;
+}
+
+/*
+ * User block
+ */
+
+function merc_global_user(){
+    global $user;
+    $output = '';
+    if($user->uid > 0){
+       $output .='<div class="user-wrapper">Hello '.l($user->name,'user/'.$user->uid.'/edit').' | '.l('Đăng xuất','user/logout').'</div>';
+    }else{
+        $output .='<div class="user-wrapper">'.l('Đăng nhập','user/login').' | '.l('Đăng ký','user/register').'</div>';
+    }
+    return $output;
+}
+
+
+function merc_global_preprocess_page(&$variables){
+    $url = $_GET['q'];
+    $url = explode('/',$url);
+    if($url[0] == 'new'){
+        $term = taxonomy_term_load($url[1]);
+        drupal_set_title('Tin tức  »  '.$term->name);
+    }
+}
