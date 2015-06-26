@@ -5,17 +5,16 @@ Admin Panel Styling
 
 */
 
-#admin-panel {
-
+#sidebar-left{
+    background-color: #eee;
 }
 .panel-wrapper{
-    width: 45%;
-    float:left;
-    margin-left: 20px;
-    border: 1px solid #eee;
+    width: 100%;
     margin-top: 20px;
-    padding: 20px;
-    min-height: 220px;
+    padding: 5px;
+}
+.panel-wrapper h2{
+    padding: 5px 0 0 10px;
 }
 #admin-panel #title {
 	margin-bottom: 20px;
