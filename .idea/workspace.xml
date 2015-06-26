@@ -18,11 +18,12 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/devel/krumo/docs/ric_TODO.html" afterPath="$PROJECT_DIR$/sites/all/modules/contrib/devel/krumo/docs/ric_TODO.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/devel/krumo/docs/ric_VERSION.html" afterPath="$PROJECT_DIR$/sites/all/modules/contrib/devel/krumo/docs/ric_VERSION.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/themes/omega/omega/templates/zone--content.tpl.php" afterPath="$PROJECT_DIR$/sites/all/themes/omega/omega/templates/zone--content.tpl.php" />
     </list>
     <ignored path="songlap.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="298b4332-54f8-4ffe-afb3-55ea8ca4e19e" time="1435237042602" ignored="false" />
-    <file path="/global.css" changelist="298b4332-54f8-4ffe-afb3-55ea8ca4e19e" time="1435307149697" ignored="false" />
+    <file path="/global.css" changelist="298b4332-54f8-4ffe-afb3-55ea8ca4e19e" time="1435309779936" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,10 +43,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="global.css" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="global.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sites/all/themes/songlap/css/global.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="23" selection-start="423" selection-end="423" vertical-scroll-proportion="0.0">
+            <state line="115" column="33" selection-start="2532" selection-end="2532" vertical-scroll-proportion="0.85023403">
               <folding />
             </state>
           </provider>
@@ -60,28 +61,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="region--branding.tpl.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sites/all/themes/omega/omega/templates/region--branding.tpl.php">
+      <file leaf-file-name="zone--content.tpl.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sites/all/themes/omega/omega/templates/zone--content.tpl.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="region--content.tpl.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sites/all/themes/omega/omega/templates/region--content.tpl.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="html.tpl.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/sites/all/themes/omega/omega/templates/html.tpl.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="50" selection-start="343" selection-end="352" vertical-scroll-proportion="0.111455105">
+            <state line="10" column="44" selection-start="496" selection-end="496" vertical-scroll-proportion="-5.714286">
               <folding />
             </state>
           </provider>
@@ -107,6 +90,7 @@
       <list>
         <option value="$PROJECT_DIR$/sites/all/themes/songlap/songlap.info" />
         <option value="$PROJECT_DIR$/sites/all/themes/omega/omega/templates/html.tpl.php" />
+        <option value="$PROJECT_DIR$/sites/all/themes/omega/omega/templates/zone--content.tpl.php" />
         <option value="$PROJECT_DIR$/sites/all/themes/songlap/css/global.css" />
       </list>
     </option>
@@ -436,30 +420,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/sites/all/themes/omega/omega/templates/region--branding.tpl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/themes/omega/omega/templates/region--content.tpl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/themes/omega/omega/templates/zone--content.tpl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding>
-            <marker date="1435236904000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1435236904000" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sites/all/themes/omega/omega/templates/section--header.tpl.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -481,6 +441,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/omega/omega/templates/html.tpl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="50" selection-start="343" selection-end="352" vertical-scroll-proportion="0.111455105">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/omega/omega/templates/region--content.tpl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/omega/omega/templates/region--branding.tpl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/sites/all/themes/songlap/songlap.info">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="1" selection-start="465" selection-end="465" vertical-scroll-proportion="-8.0">
@@ -488,16 +469,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/themes/songlap/css/global.css">
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/omega/omega/templates/zone--content.tpl.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="23" selection-start="423" selection-end="423" vertical-scroll-proportion="0.0">
+        <state line="10" column="44" selection-start="496" selection-end="496" vertical-scroll-proportion="-5.714286">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/themes/omega/omega/templates/html.tpl.php">
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/songlap/css/global.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="50" selection-start="343" selection-end="352" vertical-scroll-proportion="0.111455105">
+        <state line="115" column="33" selection-start="2532" selection-end="2532" vertical-scroll-proportion="0.85023403">
           <folding />
         </state>
       </provider>
