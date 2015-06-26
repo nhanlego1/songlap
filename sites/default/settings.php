@@ -217,10 +217,10 @@ $databases = array (
   array (
     'default' => 
     array (
-      'database' => 'songlap',
-      'username' => 'songlap',
-      'password' => 'abcd1234',
-      'host' => '118.69.169.80',
+      'database' => 'song912_songlap',
+      'username' => 'song912_user',
+      'password' => '@abcd1234',
+      'host' => '112.213.89.2',
       'port' => '3306',
       'driver' => 'mysql',
       'prefix' => '',

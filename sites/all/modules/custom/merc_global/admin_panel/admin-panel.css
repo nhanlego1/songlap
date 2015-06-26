@@ -5,8 +5,9 @@ Admin Panel Styling
 
 */
 
-#sidebar-left{
-    background-color: #eee;
+#sidebar-left .region-sidebar-left {
+    margin-right: 20px!important;
+    background: #eee;
 }
 .panel-wrapper{
     width: 100%;
