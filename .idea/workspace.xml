@@ -2,10 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="298b4332-54f8-4ffe-afb3-55ea8ca4e19e" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/themes/songlap/js/mercvn.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/themes/songlap/logo.png" afterPath="$PROJECT_DIR$/sites/all/themes/songlap/logo.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/devel/krumo/docs/Krumo/_class.krumo.php.html" afterPath="$PROJECT_DIR$/sites/all/modules/contrib/devel/krumo/docs/Krumo/_class.krumo.php.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/devel/krumo/docs/classtrees_Krumo.html" afterPath="$PROJECT_DIR$/sites/all/modules/contrib/devel/krumo/docs/classtrees_Krumo.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/devel/krumo/docs/elementindex.html" afterPath="$PROJECT_DIR$/sites/all/modules/contrib/devel/krumo/docs/elementindex.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/devel/krumo/docs/elementindex_Krumo.html" afterPath="$PROJECT_DIR$/sites/all/modules/contrib/devel/krumo/docs/elementindex_Krumo.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/devel/krumo/docs/errors.html" afterPath="$PROJECT_DIR$/sites/all/modules/contrib/devel/krumo/docs/errors.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/themes/songlap/css/global.css" afterPath="$PROJECT_DIR$/sites/all/themes/songlap/css/global.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/themes/songlap/songlap.info" afterPath="$PROJECT_DIR$/sites/all/themes/songlap/songlap.info" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/devel/krumo/docs/index.html" afterPath="$PROJECT_DIR$/sites/all/modules/contrib/devel/krumo/docs/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/devel/krumo/docs/Krumo/krumo.html" afterPath="$PROJECT_DIR$/sites/all/modules/contrib/devel/krumo/docs/Krumo/krumo.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/devel/krumo/docs/li_Krumo.html" afterPath="$PROJECT_DIR$/sites/all/modules/contrib/devel/krumo/docs/li_Krumo.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/devel/krumo/docs/packages.html" afterPath="$PROJECT_DIR$/sites/all/modules/contrib/devel/krumo/docs/packages.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/devel/krumo/docs/ric_INSTALL.html" afterPath="$PROJECT_DIR$/sites/all/modules/contrib/devel/krumo/docs/ric_INSTALL.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/devel/krumo/docs/ric_LICENSE.html" afterPath="$PROJECT_DIR$/sites/all/modules/contrib/devel/krumo/docs/ric_LICENSE.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/devel/krumo/docs/ric_README.html" afterPath="$PROJECT_DIR$/sites/all/modules/contrib/devel/krumo/docs/ric_README.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/devel/krumo/docs/ric_TODO.html" afterPath="$PROJECT_DIR$/sites/all/modules/contrib/devel/krumo/docs/ric_TODO.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/devel/krumo/docs/ric_VERSION.html" afterPath="$PROJECT_DIR$/sites/all/modules/contrib/devel/krumo/docs/ric_VERSION.html" />
     </list>
     <ignored path="songlap.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,19 +41,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="global.css" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="global.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sites/all/themes/songlap/css/global.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="11" selection-start="396" selection-end="396" vertical-scroll-proportion="0.0">
+            <state line="98" column="21" selection-start="1794" selection-end="1794" vertical-scroll-proportion="0.8538813">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="songlap.info" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="songlap.info" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sites/all/themes/songlap/songlap.info">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="1" selection-start="465" selection-end="465" vertical-scroll-proportion="0.26966292">
+            <state line="14" column="1" selection-start="465" selection-end="465" vertical-scroll-proportion="-8.0">
               <folding />
             </state>
           </provider>
@@ -70,7 +81,10 @@
         <entry file="file://$PROJECT_DIR$/sites/all/themes/omega/omega/templates/zone--content.tpl.php">
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
-              <folding />
+              <folding>
+                <marker date="1435236904000" expanded="true" signature="27:534" placeholder="..." />
+                <marker date="1435236904000" expanded="true" signature="79:504" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -129,8 +143,8 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/sites/all/themes/songlap/css/global.css" />
         <option value="$PROJECT_DIR$/sites/all/themes/songlap/songlap.info" />
+        <option value="$PROJECT_DIR$/sites/all/themes/songlap/css/global.css" />
       </list>
     </option>
   </component>
@@ -386,7 +400,10 @@
     <entry file="file://$PROJECT_DIR$/sites/all/themes/omega/omega/templates/zone--content.tpl.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
+          <folding>
+            <marker date="1435236904000" expanded="true" signature="27:534" placeholder="..." />
+            <marker date="1435236904000" expanded="true" signature="79:504" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -418,16 +435,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/themes/songlap/css/global.css">
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/songlap/songlap.info">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="11" selection-start="396" selection-end="396" vertical-scroll-proportion="0.0">
+        <state line="14" column="1" selection-start="465" selection-end="465" vertical-scroll-proportion="-8.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/themes/songlap/songlap.info">
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/songlap/css/global.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="1" selection-start="465" selection-end="465" vertical-scroll-proportion="0.26966292">
+        <state line="98" column="21" selection-start="1794" selection-end="1794" vertical-scroll-proportion="0.8538813">
           <folding />
         </state>
       </provider>
