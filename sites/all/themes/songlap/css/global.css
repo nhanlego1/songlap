@@ -1,9 +1,14 @@
+@font-face {
+    font-family: 'MYRIADPROREGULAR';
+    src: url('../font/MYRIADPROREGULAR.eot');
+    src: local('MYRIADPROREGULAR'), url('../font/MYRIADPROREGULAR.woff') format('woff'), url('../font/MYRIADPROREGULAR.ttf') format('truetype');
+}
 body {
     background-image: url(../images/body.png);
     background-repeat: repeat;
     background-position: top center;
     background-attachment: scroll;
-<<<<<<< HEAD
+    font-family: "Open Sans";
 }
 header#section-header {
     background: rgba(125,125,125,0.1);
@@ -15,19 +20,7 @@ header#section-header {
     background: #fff;
     box-shadow: 5px 5px 3px #888888;
     padding: 0 5px 0 10px;
-=======
     color: #878383;
-}
-header#section-header {
-    background: rgba(125,125,125,0.1);
-    border: none;
-    padding: 22px 0 25px;
-    border-bottom: 1px solid #dadada;
-}
-#block-system-main{
-    background: #fff;
-    box-shadow: 5px 5px 3px #888888;
-    padding: 0 5px 0 10px;
 }
 
 /*
@@ -60,6 +53,10 @@ ul li.leaf {
 	color: #fff;
 	background-color: #a62d1d;
 	padding: 10px 15px;
+    font-family: "MYRIADPROREGULAR";
+}
+h1.title{
+    font-family: "MYRIADPROREGULAR";
 }
 #block-menu-menu-left-menu .block-title:before {
 	content: ">";
@@ -83,6 +80,8 @@ ul li.leaf {
 #block-menu-menu-left-menu ul.menu a {
 	color: #bb2e1b;
 	text-transform: uppercase;
+    font-weight: bold;
+    font-family: "MYRIADPROREGULAR";
 }
 /*
  * Footer
@@ -90,6 +89,7 @@ ul li.leaf {
 .section-footer {
 	background-color: #fff;
 	padding: 10px 0;
+
 }
 #block-block-1 .fotter-info{
 	text-transform: uppercase;
