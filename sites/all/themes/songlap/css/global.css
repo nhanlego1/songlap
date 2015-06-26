@@ -71,7 +71,7 @@ h2.block-title {
 h1.title{
     font-family: "MYRIADPROREGULAR";
 }
-#block-menu-menu-left-menu .block-title:before {
+h2.block-title:before {
 	content: ">";
 	display: inline;
 	padding: 0 10px 0 0;

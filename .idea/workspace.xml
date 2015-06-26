@@ -17,13 +17,11 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/devel/krumo/docs/ric_README.html" afterPath="$PROJECT_DIR$/sites/all/modules/contrib/devel/krumo/docs/ric_README.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/devel/krumo/docs/ric_TODO.html" afterPath="$PROJECT_DIR$/sites/all/modules/contrib/devel/krumo/docs/ric_TODO.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/devel/krumo/docs/ric_VERSION.html" afterPath="$PROJECT_DIR$/sites/all/modules/contrib/devel/krumo/docs/ric_VERSION.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/themes/omega/omega/templates/zone--content.tpl.php" afterPath="$PROJECT_DIR$/sites/all/themes/omega/omega/templates/zone--content.tpl.php" />
     </list>
     <ignored path="songlap.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="298b4332-54f8-4ffe-afb3-55ea8ca4e19e" time="1435237042602" ignored="false" />
-    <file path="/global.css" changelist="298b4332-54f8-4ffe-afb3-55ea8ca4e19e" time="1435309779936" ignored="false" />
+    <file path="/global.css" changelist="298b4332-54f8-4ffe-afb3-55ea8ca4e19e" time="1435310929199" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +44,7 @@
       <file leaf-file-name="global.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sites/all/themes/songlap/css/global.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="115" column="33" selection-start="2532" selection-end="2532" vertical-scroll-proportion="0.85023403">
+            <state line="73" column="2" selection-start="1706" selection-end="1706" vertical-scroll-proportion="0.25117004">
               <folding />
             </state>
           </provider>
@@ -478,7 +476,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sites/all/themes/songlap/css/global.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="115" column="33" selection-start="2532" selection-end="2532" vertical-scroll-proportion="0.85023403">
+        <state line="73" column="2" selection-start="1706" selection-end="1706" vertical-scroll-proportion="0.25117004">
           <folding />
         </state>
       </provider>
