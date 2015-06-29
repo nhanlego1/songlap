@@ -7,28 +7,6 @@
  * To change this template use File | Settings | File Templates.
  */
 
-//function merc_global_menu()
-//{
-//    $items['admin/portal/dashboard'] = array(
-//        'title' => 'Admin Dashboard',
-//        'page callback' => 'merc_global_admin_dashboard',
-//        'access arguments' => array('admin dashboard'),
-//        'type' => MENU_LOCAL_ACTION,
-//        'weight' => 1,
-//    );
-//
-//
-//    return $items;
-//}
-
-//function merc_global_permission() {
-//    return array(
-//        'admin dashboard' => array(
-//            'title' => t('Administer dashboard'),
-//            'description' => t('Perform administration tasks for my module.'),
-//        ),
-//    );
-//}
 
 
 /**
@@ -38,6 +16,9 @@ function merc_global_block_info() {
 
     $blocks['admin_panel'] = array(
         'info' => t('Admin Panel'),
+    );
+    $blocks['songlap_year'] = array(
+        'info' => t('Year category'),
     );
 
     return $blocks;
@@ -53,6 +34,10 @@ function merc_global_block_view($delta = '') {
         case 'admin_panel':
             $block['subject'] = '';
             $block['content'] = merc_global_admin_dashboard();
+            break;
+        case 'songlap_year':
+            $block['subject'] = t('Project by year');
+            $block['content'] = merc_year_filter();
             break;
 
     }
@@ -79,13 +64,37 @@ function merc_global_admin_dashboard(){
     drupal_add_css(drupal_get_path('module','merc_global').'/admin_panel/admin-panel.css');
     return array('#theme' => 'merc_global_panel');
 }
-//
-//
-//function merc_global_preprocess_page(&$variables){
-//    $url = $_GET['q'];
-//    $url = explode('/',$url);
-//    if($url[0] == 'new'){
-//        $term = taxonomy_term_load($url[1]);
-//        drupal_set_title('Tin tức  »  '.$term->name);
-//    }
-//}
+
+/*
+ *
+ */
+function merc_year_filter(){
+    $tid = arg(2);
+    $curr_term = taxonomy_term_load($tid);
+    $terms = taxonomy_get_tree(4);
+    $output = '';
+    $output .='<ul class="year-category">';
+    foreach($terms as $term){
+       if($curr_term->vid==2){
+         if($term->tid==$tid){
+             $output .='<li><a class="active" href="'.url('taxonomy/term/'.$term->tid,array('query'=>array('cate'=>$tid))).'">'.$term->name.'</a></li>';
+         }
+         else{
+             $output .='<li><a href="'.url('taxonomy/term/'.$term->tid,array('query'=>array('cate'=>$tid))).'">'.$term->name.'</a></li>';
+         }
+
+       }elseif(isset($_GET['cate'])){
+            if($tid==$term->tid){
+                $output .='<li><a class="active" href="'.url('taxonomy/term/'.$term->tid,array('query'=>array('cate'=>$_GET['cate']))).'">'.$term->name.'</a></li>';
+            }else{
+                $output .='<li><a href="'.url('taxonomy/term/'.$term->tid,array('query'=>array('cate'=>$_GET['cate']))).'">'.$term->name.'</a></li>';
+            }
+
+        }else{
+           $output .='<li><a href="'.url('taxonomy/term/'.$term->tid).'">'.$term->name.'</a></li>';
+       }
+
+    }
+    $output .='</ul>';
+    return $output;
+}

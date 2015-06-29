@@ -7,17 +7,16 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/devel/krumo/docs/elementindex.html" afterPath="$PROJECT_DIR$/sites/all/modules/contrib/devel/krumo/docs/elementindex.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/devel/krumo/docs/elementindex_Krumo.html" afterPath="$PROJECT_DIR$/sites/all/modules/contrib/devel/krumo/docs/elementindex_Krumo.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/devel/krumo/docs/errors.html" afterPath="$PROJECT_DIR$/sites/all/modules/contrib/devel/krumo/docs/errors.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/themes/songlap/css/global.css" afterPath="$PROJECT_DIR$/sites/all/themes/songlap/css/global.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/devel/krumo/docs/index.html" afterPath="$PROJECT_DIR$/sites/all/modules/contrib/devel/krumo/docs/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/devel/krumo/docs/Krumo/krumo.html" afterPath="$PROJECT_DIR$/sites/all/modules/contrib/devel/krumo/docs/Krumo/krumo.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/devel/krumo/docs/li_Krumo.html" afterPath="$PROJECT_DIR$/sites/all/modules/contrib/devel/krumo/docs/li_Krumo.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/custom/merc_global/merc_global.module" afterPath="$PROJECT_DIR$/sites/all/modules/custom/merc_global/merc_global.module" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/devel/krumo/docs/packages.html" afterPath="$PROJECT_DIR$/sites/all/modules/contrib/devel/krumo/docs/packages.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/devel/krumo/docs/ric_INSTALL.html" afterPath="$PROJECT_DIR$/sites/all/modules/contrib/devel/krumo/docs/ric_INSTALL.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/devel/krumo/docs/ric_LICENSE.html" afterPath="$PROJECT_DIR$/sites/all/modules/contrib/devel/krumo/docs/ric_LICENSE.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/devel/krumo/docs/ric_README.html" afterPath="$PROJECT_DIR$/sites/all/modules/contrib/devel/krumo/docs/ric_README.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/devel/krumo/docs/ric_TODO.html" afterPath="$PROJECT_DIR$/sites/all/modules/contrib/devel/krumo/docs/ric_TODO.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/devel/krumo/docs/ric_VERSION.html" afterPath="$PROJECT_DIR$/sites/all/modules/contrib/devel/krumo/docs/ric_VERSION.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/themes/songlap/template.php" afterPath="$PROJECT_DIR$/sites/all/themes/songlap/template.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="songlap.iws" />
@@ -29,6 +28,8 @@
     <file path="/template.php" changelist="298b4332-54f8-4ffe-afb3-55ea8ca4e19e" time="1435588379974" ignored="false" />
     <file path="/region--content_top.tpl.php" changelist="298b4332-54f8-4ffe-afb3-55ea8ca4e19e" time="1435572484222" ignored="false" />
     <file path="/omega.info" changelist="298b4332-54f8-4ffe-afb3-55ea8ca4e19e" time="1435572517833" ignored="false" />
+    <file path="/merc_global.module" changelist="298b4332-54f8-4ffe-afb3-55ea8ca4e19e" time="1435593347246" ignored="false" />
+    <file path="/a.dummy" changelist="298b4332-54f8-4ffe-afb3-55ea8ca4e19e" time="1435591453094" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,19 +52,20 @@
       <file leaf-file-name="global.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sites/all/themes/songlap/css/global.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="404" column="1" selection-start="8004" selection-end="8004" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="405" column="1" selection-start="8041" selection-end="8041" vertical-scroll-proportion="0.0">
+              <folding>
+                <marker date="1435592562000" expanded="true" signature="5459:5676" placeholder="{...}" />
+                <marker date="1435592562000" expanded="true" signature="5705:5766" placeholder="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="template.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/sites/all/themes/songlap/template.php">
+      <file leaf-file-name="merc_global.module" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/merc_global/merc_global.module">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="1" selection-start="554" selection-end="554" vertical-scroll-proportion="0.25493172">
-              <folding>
-                <element signature="e#7#510#0" expanded="true" />
-              </folding>
+            <state line="94" column="8" selection-start="2469" selection-end="2469" vertical-scroll-proportion="0.8885449">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -89,7 +91,6 @@
         <option value="$PROJECT_DIR$/sites/all/themes/songlap/songlap.info" />
         <option value="$PROJECT_DIR$/sites/all/themes/omega/omega/templates/html.tpl.php" />
         <option value="$PROJECT_DIR$/sites/all/themes/omega/omega/templates/zone--content.tpl.php" />
-        <option value="$PROJECT_DIR$/sites/all/modules/custom/merc_global/merc_global.module" />
         <option value="$PROJECT_DIR$/sites/all/modules/custom/merc_global/admin_panel/admin-panel.css" />
         <option value="$PROJECT_DIR$/sites/default/settings.php" />
         <option value="$PROJECT_DIR$/sites/all/modules/custom/merc_global/theme/merc-global-panel.tpl.php" />
@@ -97,6 +98,7 @@
         <option value="$PROJECT_DIR$/sites/all/themes/omega/omega/omega.info" />
         <option value="$PROJECT_DIR$/sites/all/themes/songlap/css/global.css" />
         <option value="$PROJECT_DIR$/sites/all/themes/songlap/template.php" />
+        <option value="$PROJECT_DIR$/sites/all/modules/custom/merc_global/merc_global.module" />
       </list>
     </option>
   </component>
@@ -304,70 +306,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="themes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="omega" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="omega" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="songlap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="songlap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sites" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="all" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="themes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="omega" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="omega" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="songlap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="songlap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sites" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="all" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="modules" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -527,6 +465,7 @@
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24964131" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -537,7 +476,6 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -605,13 +543,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/sites/default/settings.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="221" column="22" selection-start="7961" selection-end="7961" vertical-scroll-proportion="0.17335473">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/merc_global/admin_panel/admin-panel.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="32" selection-start="126" selection-end="126" vertical-scroll-proportion="0.14611872">
@@ -696,13 +627,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/themes/songlap/css/global.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="404" column="1" selection-start="8004" selection-end="8004" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/includes/common.inc">
       <provider selected="true" editor-type-id="text-editor">
         <state line="242" column="9" selection-start="6761" selection-end="6761" vertical-scroll-proportion="0.5665635">
@@ -716,6 +640,23 @@
           <folding>
             <element signature="e#7#510#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/songlap/css/global.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="405" column="1" selection-start="8041" selection-end="8041" vertical-scroll-proportion="0.0">
+          <folding>
+            <marker date="1435592562000" expanded="true" signature="5459:5676" placeholder="{...}" />
+            <marker date="1435592562000" expanded="true" signature="5705:5766" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/merc_global/merc_global.module">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="94" column="8" selection-start="2469" selection-end="2469" vertical-scroll-proportion="0.8885449">
+          <folding />
         </state>
       </provider>
     </entry>
