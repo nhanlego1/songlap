@@ -156,10 +156,11 @@ img, media {
     font-family: "MYRIADPROREGULAR";
     font-size: 20px;
 }
+
 h1.title{
     font-family: "MYRIADPROREGULAR";
 }
-.region-sidebar-firsth2.block-title:before {
+.region-sidebar-first h2.block-title:before {
 	content: ">";
 	display: inline;
 	padding: 0 10px 0 0;
@@ -167,11 +168,12 @@ h1.title{
 .region-sidebar-first .block {
 	margin: 0 0 40px 0;
 }
-#block-menu-menu-left-menu .content {
+.region-sidebar-first .block-inner .content {
 	border: 1px solid #c9c6c6;
 	background-color: #ffffff;
 	padding: 20px;
 }
+
 #block-menu-menu-left-menu ul.menu li {
 	margin: 0 0 10px 0;
 }
@@ -207,11 +209,7 @@ h1.title{
 #block-views-news-list-block .views-row a:before {
 	color: #62605f;
 }
-#block-views-news-list-block .view-news-list {
-	padding: 15px 20px;
-	border: 1px solid #c9c6c6;
-	background-color: #fff;
-}
+
 
 /*
  * Branding
@@ -294,6 +292,7 @@ h1.title{
 .section-footer {
 	background-color: #fff;
 	padding: 10px 0;
+    margin-top: 20px;
 
 }
 #block-block-1 .fotter-info{
@@ -350,20 +349,57 @@ h1.title{
 /*
  * Contact
  */
-#webform-client-form-10 .form-item {
+.webform-client-form .form-item {
 }
-#webform-client-form-10 .form-item label {
-	width: 75px;
+.webform-client-form .form-item label {
+	width: 120px;
 	display: inline-block;
 }
-#webform-client-form-10 .form-item input,
-#webform-client-form-10 .form-item textarea{
+.webform-client-form .form-item input,
+.webform-client-form .form-item textarea{
 	width: 300px;
 }
-#webform-client-form-10 .form-item textarea {
+.webform-client-form .form-item textarea {
 	resize: none;
 	height: 150px;
 }
-#webform-client-form-10 .webform-component-textarea .grippie {
+.webform-client-form .webform-component-textarea .grippie {
 	display: none;
+}
+.container-12 .views-row.grid-3{
+    width:265px;
+}
+#zone-footer{
+    margin-top: 20px;
+}
+/**
+Home page
+*/
+#region-content h2.block-title{
+    font-family: "MYRIADPROREGULAR";
+    font-size: 36px;
+}
+.front h1.title{
+    display: none;
+}
+.front #block-views-feature-project-block-1 .content{
+    background: #fff;
+    box-shadow: 5px 5px 3px #888888;
+    padding: 10px;
+    color: #878383;
+}
+.front #block-system-main{
+    background: none;
+    box-shadow: none;
+    display: none;
+}
+
+ul li.translation_vi, ul li.translation_en{
+    display: none!important;
+}
+.front .flexslider{
+    margin: 0 0 20px;
+}
+.breadcrumb {
+    padding-bottom: 1.5em;
 }
