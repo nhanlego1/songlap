@@ -397,3 +397,6 @@ Home page
 ul li.translation_vi, ul li.translation_en{
     display: none!important;
 }
+.front .flexslider{
+    margin: 0 0 20px;
+}
