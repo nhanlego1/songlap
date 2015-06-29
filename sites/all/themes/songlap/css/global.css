@@ -129,10 +129,10 @@ img, media {
 	display: block;
 }
 .language-switcher-locale-url li.vi a {
-	background: url("../images/flag-1.png") no-repeat scroll 0 0 transparent;
+	background: url("../images/flag-vn.png") no-repeat scroll 0 0 transparent;
 }
 .language-switcher-locale-url li.en a {
-	background: url("../images/flag-2.png") no-repeat scroll 0 0 transparent;
+	background: url("../images/flag-en.png") no-repeat scroll 0 0 transparent;
 }
 /*
  * Breadcrumb
@@ -232,7 +232,7 @@ h1.title{
 	top: 0;
 }
 #views-exposed-form-search-page .views-submit-button input {
-	background: url("../images/btn-search.png") no-repeat scroll 0 3px transparent;
+	background: url("../images/btn-searc-bg.png") no-repeat scroll 0 3px transparent;
 	width: 30px;
 	height: 30px;
 }
