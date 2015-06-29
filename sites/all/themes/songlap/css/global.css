@@ -400,3 +400,6 @@ ul li.translation_vi, ul li.translation_en{
 .front .flexslider{
     margin: 0 0 20px;
 }
+.breadcrumb {
+    padding-bottom: 1.5em;
+}
