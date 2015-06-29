@@ -265,11 +265,11 @@ h1.title{
 	-moz-box-sizing: border-box;
 	-ms-box-sizing: border-box;
 	-o-box-sizing: border-box;
-	padding: 10px;
+	padding: 15px 20px;
 }
 #main-menu li {
 	border-right: 2px solid #fff;
-	padding: 13px 30px;
+	padding: 18px 30px;
 	line-height: 21px;
 }
 #main-menu li:last-child {
@@ -280,6 +280,7 @@ h1.title{
     font-family: "MYRIADPROREGULAR";
     font-size: 20px;
     color: #fff;
+    vertical-align: middle;
 }
 #main-menu li a:hover,
 #main-menu li a.active {
