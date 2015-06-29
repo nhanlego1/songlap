@@ -12,6 +12,7 @@ base theme = alpha
 
 regions[page_top] = Page Top
 regions[page_bottom] = Page Bottom
+regions[content_top] = Content Top
 regions[content] = Content
 
 ; END REQUIRED CORE REGIONS
