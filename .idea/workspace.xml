@@ -7,7 +7,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/devel/krumo/docs/elementindex.html" afterPath="$PROJECT_DIR$/sites/all/modules/contrib/devel/krumo/docs/elementindex.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/devel/krumo/docs/elementindex_Krumo.html" afterPath="$PROJECT_DIR$/sites/all/modules/contrib/devel/krumo/docs/elementindex_Krumo.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/devel/krumo/docs/errors.html" afterPath="$PROJECT_DIR$/sites/all/modules/contrib/devel/krumo/docs/errors.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/themes/omega/omega/templates/html.tpl.php" afterPath="$PROJECT_DIR$/sites/all/themes/omega/omega/templates/html.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/themes/songlap/css/global.css" afterPath="$PROJECT_DIR$/sites/all/themes/songlap/css/global.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/devel/krumo/docs/index.html" afterPath="$PROJECT_DIR$/sites/all/modules/contrib/devel/krumo/docs/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/devel/krumo/docs/Krumo/krumo.html" afterPath="$PROJECT_DIR$/sites/all/modules/contrib/devel/krumo/docs/Krumo/krumo.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/devel/krumo/docs/li_Krumo.html" afterPath="$PROJECT_DIR$/sites/all/modules/contrib/devel/krumo/docs/li_Krumo.html" />
@@ -17,11 +17,13 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/devel/krumo/docs/ric_README.html" afterPath="$PROJECT_DIR$/sites/all/modules/contrib/devel/krumo/docs/ric_README.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/devel/krumo/docs/ric_TODO.html" afterPath="$PROJECT_DIR$/sites/all/modules/contrib/devel/krumo/docs/ric_TODO.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/contrib/devel/krumo/docs/ric_VERSION.html" afterPath="$PROJECT_DIR$/sites/all/modules/contrib/devel/krumo/docs/ric_VERSION.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/system/system.base.css" afterPath="$PROJECT_DIR$/modules/system/system.base.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="songlap.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="298b4332-54f8-4ffe-afb3-55ea8ca4e19e" time="1435237042602" ignored="false" />
-    <file path="/global.css" changelist="298b4332-54f8-4ffe-afb3-55ea8ca4e19e" time="1435637077182" ignored="false" />
+    <file path="/global.css" changelist="298b4332-54f8-4ffe-afb3-55ea8ca4e19e" time="1435652177862" ignored="false" />
     <file path="/admin-panel.css" changelist="298b4332-54f8-4ffe-afb3-55ea8ca4e19e" time="1435326497233" ignored="false" />
     <file path="/merc-global-panel.tpl.php" changelist="298b4332-54f8-4ffe-afb3-55ea8ca4e19e" time="1435637652560" ignored="false" />
     <file path="/template.php" changelist="298b4332-54f8-4ffe-afb3-55ea8ca4e19e" time="1435637242890" ignored="false" />
@@ -51,45 +53,16 @@
       <file leaf-file-name="global.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sites/all/themes/songlap/css/global.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="459" column="0" selection-start="9649" selection-end="9649" vertical-scroll-proportion="0.0">
+            <state line="665" column="0" selection-start="14069" selection-end="14119" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="template.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sites/all/themes/songlap/template.php">
+      <file leaf-file-name="system.base.css" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/modules/system/system.base.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="42" selection-start="1389" selection-end="1389" vertical-scroll-proportion="-20.0">
-              <folding>
-                <element signature="e#7#510#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="merc-global-panel.tpl.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/merc_global/theme/merc-global-panel.tpl.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="30" selection-start="1469" selection-end="1469" vertical-scroll-proportion="-21.714285">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="merc_global.module" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/merc_global/merc_global.module">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="1" selection-start="719" selection-end="719" vertical-scroll-proportion="-13.714286">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="html.tpl.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/sites/all/themes/omega/omega/templates/html.tpl.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="9" selection-start="1743" selection-end="1743" vertical-scroll-proportion="0.5758514">
+            <state line="273" column="1" selection-start="5478" selection-end="5478" vertical-scroll-proportion="0.92941177">
               <folding />
             </state>
           </provider>
@@ -119,11 +92,12 @@
         <option value="$PROJECT_DIR$/sites/default/settings.php" />
         <option value="$PROJECT_DIR$/sites/all/themes/omega/omega/templates/region--content_top.tpl.php" />
         <option value="$PROJECT_DIR$/sites/all/themes/omega/omega/omega.info" />
-        <option value="$PROJECT_DIR$/sites/all/themes/songlap/css/global.css" />
         <option value="$PROJECT_DIR$/sites/all/themes/songlap/template.php" />
         <option value="$PROJECT_DIR$/sites/all/modules/custom/merc_global/theme/merc-global-panel.tpl.php" />
         <option value="$PROJECT_DIR$/sites/all/modules/custom/merc_global/merc_global.module" />
         <option value="$PROJECT_DIR$/sites/all/themes/omega/omega/templates/html.tpl.php" />
+        <option value="$PROJECT_DIR$/sites/all/themes/songlap/css/global.css" />
+        <option value="$PROJECT_DIR$/modules/system/system.base.css" />
       </list>
     </option>
   </component>
@@ -515,6 +489,38 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="songlap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="songlap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="songlap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="songlap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="system" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -632,13 +638,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/sites/all/themes/contrib/adminimal_theme/theme-settings.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="31.47619">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sites/all/themes/omega/omega/templates/region--content.tpl.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -709,39 +708,46 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/themes/songlap/css/global.css">
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/omega/omega/templates/html.tpl.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="459" column="0" selection-start="9649" selection-end="9649" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/themes/songlap/template.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="42" selection-start="1389" selection-end="1389" vertical-scroll-proportion="-20.0">
-          <folding>
-            <element signature="e#7#510#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/merc_global/theme/merc-global-panel.tpl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="30" selection-start="1469" selection-end="1469" vertical-scroll-proportion="-21.714285">
+        <state line="31" column="9" selection-start="1743" selection-end="1743" vertical-scroll-proportion="0.5758514">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/merc_global/merc_global.module">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="1" selection-start="719" selection-end="719" vertical-scroll-proportion="-13.714286">
+        <state line="30" column="1" selection-start="719" selection-end="719" vertical-scroll-proportion="0.44582042">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/themes/omega/omega/templates/html.tpl.php">
+    <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/merc_global/theme/merc-global-panel.tpl.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="9" selection-start="1743" selection-end="1743" vertical-scroll-proportion="0.5758514">
+        <state line="38" column="30" selection-start="1469" selection-end="1469" vertical-scroll-proportion="0.69195753">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/songlap/template.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="42" selection-start="1389" selection-end="1389" vertical-scroll-proportion="0.6373293">
+          <folding>
+            <element signature="e#7#510#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/songlap/css/global.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="665" column="0" selection-start="14069" selection-end="14119" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/system/system.base.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="273" column="1" selection-start="5478" selection-end="5478" vertical-scroll-proportion="0.92941177">
           <folding />
         </state>
       </provider>

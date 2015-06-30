@@ -663,3 +663,11 @@ ul.pager li.pager-current {
 .view-header{
     font-size: 16px;
 }
+.maintenance-page #page{
+    text-align: center;
+}
+
+/**
+Ipad landcape
+*/
+

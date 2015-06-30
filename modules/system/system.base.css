@@ -269,3 +269,6 @@ html.js .js-hide {
   min-height: 1%;
 }
 
+.maintenance-page #page{
+    text-align: center;
+}
