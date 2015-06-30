@@ -27,4 +27,12 @@ function songlap_preprocess_page(&$vars)
         $breadcrumb .='</div>';
         $vars['breadcrumb'] = $breadcrumb;
     }
+    if($_GET['q']=='projects'){
+        $breadcrumb = '';
+        $breadcrumb .='<div class="breadcrumb">';
+        $breadcrumb .='<a href="'.$vars['front_page'].'">'.t('Home').'</a> ';
+        $breadcrumb .='» '.t('Projects');
+        $breadcrumb .='</div>';
+        $vars['breadcrumb'] = $breadcrumb;
+    }
 }

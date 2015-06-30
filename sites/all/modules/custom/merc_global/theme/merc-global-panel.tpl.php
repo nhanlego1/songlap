@@ -36,21 +36,19 @@
         </ul>
     </div>
     <div class="panel-wrapper">
-        <h2>Quản lý nội dung text footer</h2>
+        <h2>Quản lý text block </h2>
         <ul>
             <li class="manage"><a
-                    href="/admin/structure/block/manage/block/2/configure?destination=admin">Chỉnh sửa
-                    nội dung và link block dưới slideshow </a></li>
+                    href="/admin/structure/block/manage/block/1/configure?destination=admin">Sửa nội dung text footer </a></li>
+            <li class="manage"><a
+                    href="/admin/structure/block/manage/block/5/configure?destination=admin">Sửa nội dung text header</a></li>
 
         </ul>
     </div>
     <div class="panel-wrapper">
         <h2>Quản lý thông tin liên hệ </h2>
         <ul>
-            <li class="manage"><a href="/node/2/webform-results">Quản lý thông tin liên hệ </a></li>
-            <li class="manage"><a
-                    href="/admin/structure/block/manage/block/1/configure?destination=admin">Quản lý
-                    block text trang liên hệ </a></li>
+            <li class="manage"><a href="/node/10/webform-results">Quản lý thông tin liên hệ </a></li>
 
         </ul>
     </div>

@@ -7,6 +7,28 @@
  * To change this template use File | Settings | File Templates.
  */
 
+function merc_global_menu()
+{
+    $items['admin/portal/dashboard'] = array(
+        'title' => 'Admin Dashboard',
+        'page callback' => 'merc_global_admin_dashboard',
+        'access arguments' => array('admin dashboard'),
+        'type' => MENU_LOCAL_ACTION,
+        'weight' => 1,
+    );
+
+
+    return $items;
+}
+
+function merc_global_permission() {
+    return array(
+        'admin dashboard' => array(
+            'title' => t('Administer dashboard'),
+            'description' => t('Perform administration tasks for my module.'),
+        ),
+    );
+}
 
 
 /**
@@ -98,3 +120,5 @@ function merc_year_filter(){
     $output .='</ul>';
     return $output;
 }
+
+
