@@ -526,6 +526,10 @@ ul.phone-number-header li{
     top: 50px;
     left: 214px;
 }
+.i18n-en #block-block-2{
+    left: 165px;
+}
+
 #section-header{
     margin-top: -36px;
 }
@@ -666,8 +670,211 @@ ul.pager li.pager-current {
 .maintenance-page #page{
     text-align: center;
 }
+ul li.collapsed, ul li.expanded {
+     list-style-image: none;
+    list-style-type: none;
+}
+li.expanded ul{
+    display: none;
+}
+ul.sub-cate-filter{
+    width: 100%;
+
+}
+ul.sub-cate-filter li{
+    margin-right: 15px;
+    margin-bottom: 25px;
+    float:left;
+}
+ul.sub-cate-filter li.parent:after{
+    content: ">";
+    display: inline;
+    padding: 10px 7px 0 9px;
+    color: #a62d1d;
+    font-size: 28px;
+    line-height: 8px;
+    top: 6px;
+    position: relative;
+}
+ul.sub-cate-filter li a{
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: "MYRIADPROREGULAR";
+    color:#a62d1d;
+}
+ul.sub-cate-filter li a:hover, ul.sub-cate-filter li a.active{
+    background-color:#a62d1d;
+    padding: 10px;
+    color:#fff;
+    font-weight: normal;
+}
+.back-to-cate{
+    margin-bottom: 20px;
+}
+.back-to-cate a{
+    background: url(../images/go-back-icon.png) no-repeat right center;
+    padding: 15px 40px 0 0;
+    line-height: 28px;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #888;
+    font-family: "MYRIADPROREGULAR";
+}
+.back-to-cate a b{
+    color: #a62d1d;
+}
 
 /**
 Ipad landcape
 */
 
+@media (max-width: 1024px) {
+    #block-block-2 img{
+        width: 370px!important;
+        height: auto!important;
+    }
+    #block-block-2{
+        left:154px;
+    }
+    ul.phone-number-header li:first-child {
+        float: left;
+        margin-right: 16px;
+    }
+    #block-block-5 {
+        width: 328px;
+        float: left;
+        margin: -32px 0 0 0px;
+    }
+    .front .container-12 .views-row.grid-3 {
+        width: 205px;
+    }
+    .container-12 .views-row.grid-3 {
+        width: 197px;
+    }
+    #block-menu-menu-left-menu ul.menu a {
+        font-size: 14px;
+    }
+    .region-sidebar-first h2.block-title {
+        font-size: 18px;
+    }
+}
+@media (max-width: 968px){
+    .responsive-menus.responsified span.toggler {
+        padding: 1px;
+        display: block;
+        background: #a62d1d;
+        color: #fff;
+        border-radius: 5px;
+        box-shadow: none;
+        font-size: 1.35em;
+        text-align: center;
+        cursor: pointer;
+        outline: none;
+        margin-bottom: 10px;
+    }
+    #block-block-4{
+        display: none;
+    }
+
+    #block-block-5 {
+        width: 266px;
+    }
+    ul.phone-number-header li {
+        float: left;
+        padding-left: 36px;
+        font-size: 12px;
+        padding-top: 10px;
+    }
+    ul.phone-number-header {
+        float: left;
+    }
+    #region-sidebar-first{
+        width: 97%;
+    }
+    #block-block-3{
+        display: none;
+    }
+    .container-12 .grid-9 {
+        width: 97%!important;
+    }
+    .container-12 .grid-8 {
+        width: 63%!important;
+    }
+
+}
+@media (max-width: 756px){
+    #block-block-3,#block-block-2, #block-block-5 {
+        display: none;
+    }
+    .container-12 .grid-3 {
+        width: 93%!important;
+    }
+    .container-12 .grid-9 {
+        width: 93%!important;
+    }
+    .region-branding .block-views-exp-search-page {
+        float: none;
+        margin: 0px 0 0 14px;
+        text-align: center;
+        /* margin-left: -10px; */
+    }
+    #views-exposed-form-search-page .views-submit-button input {
+        margin-left: -72px;
+    }
+    #breadcrumb,#block-views-news-list-block,#block-views-exp-search-page{
+        display: none;
+    }
+    #block-block-1 .fotter-info {
+        text-transform: uppercase;
+        font-size: 16px;
+    }
+    .webform-client-form .form-item input, .webform-client-form .form-item textarea  {
+        width: 268px;
+    }
+    .webform-client-form button, .webform-client-form input[type="reset"], .webform-client-form input[type="submit"], .webform-client-form input[type="button"] {
+        margin-left: 198px;
+    }
+    .webform-component-markup iframe{
+        width: 100%;
+    }
+    #views-exposed-form-project-page .form-item, #views-exposed-form-all-project-page .form-item {
+        float: left;
+        margin: 0 0px 10px;
+    }
+    h1 {
+        font-size: 22px;
+    }
+    ul.sub-cate-filter li {
+        margin-right: 0px;
+        margin-bottom: 25px;
+        float: left;
+    }
+    ul.sub-cate-filter li.parent:after {
+        content: ">";
+        display: inline;
+        padding: 10px 7px 0 9px;
+        color: #a62d1d;
+        font-size: 18px;
+        line-height: 8px;
+        top: 4px;
+        position: relative;
+    }
+    ul.sub-cate-filter li a {
+        font-size: 9px;
+        text-transform: uppercase;
+        font-family: "MYRIADPROREGULAR";
+        color: #a62d1d;
+    }
+    ul.sub-cate-filter li.parent:after {
+        content: ">";
+        display: inline;
+        padding: 10px 7px 0 9px;
+        color: #a62d1d;
+        font-size: 18px;
+        line-height: 8px;
+        top: 4px;
+        position: relative;
+    }
+
+
+}

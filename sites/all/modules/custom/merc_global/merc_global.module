@@ -42,6 +42,9 @@ function merc_global_block_info() {
     $blocks['songlap_year'] = array(
         'info' => t('Year category'),
     );
+    $blocks['songlap_subcategory'] = array(
+        'info' => t('Sub category'),
+    );
 
     return $blocks;
 }
@@ -60,6 +63,10 @@ function merc_global_block_view($delta = '') {
         case 'songlap_year':
             $block['subject'] = t('Project by year');
             $block['content'] = merc_year_filter();
+            break;
+        case 'songlap_subcategory':
+            $block['subject'] = t('Sub-category');
+            $block['content'] = merc_sub_cate();
             break;
 
     }
@@ -92,6 +99,12 @@ function merc_global_admin_dashboard(){
  */
 function merc_year_filter(){
     $tid = arg(2);
+
+    if(check_parent($tid)){
+       $tid = arg(2);
+    }else{
+        $tid = get_parent($tid)->tid;
+    }
     $curr_term = taxonomy_term_load($tid);
     $terms = taxonomy_get_tree(4);
     $output = '';
@@ -120,5 +133,111 @@ function merc_year_filter(){
     $output .='</ul>';
     return $output;
 }
+
+function merc_sub_cate(){
+    if(isset($_GET['cate'])){
+        $tid = $_GET['cate'];
+    }else{
+        $tid = arg(2);
+    }
+
+    $curr_term = taxonomy_term_load($tid);
+    $output = '';
+    $output .='<ul class="sub-cate-filter">';
+    if(isset($curr_term) && $curr_term->vid==2){
+      if(check_parent($curr_term->tid)){
+          $output .='<li class="parent"> <a class="active" href="'.url('taxonomy/term/'.$curr_term->tid).'" >'.$curr_term->name.' </a></li>';
+          $terms = taxonomy_get_children($curr_term->tid);
+          foreach($terms as $t){
+              $term = taxonomy_term_load($t->tid);
+              $output .='<li><a href="'.url('taxonomy/term/'.$term->tid).'">'.$term->name.'</a></li>';
+          }
+      }else{
+          $parent = get_parent($tid);
+          $terms = taxonomy_get_children($parent->tid);
+          $output .='<li class="parent"><a href="'.url('taxonomy/term/'.$parent->tid).'">'.$parent->name.'</a></li>';
+          foreach($terms as $t){
+              $term = taxonomy_term_load($t->tid);
+              if($tid==$term->tid){
+                  $output .='<li><a class="active" href="'.url('taxonomy/term/'.$term->tid).'">'.$term->name.'</a></li>';
+              }else{
+                  $output .='<li><a href="'.url('taxonomy/term/'.$term->tid).'">'.$term->name.'</a></li>';
+              }
+
+          }
+
+      }
+
+
+    }
+    $output .='</ul>';
+    return $output;
+}
+
+/**
+ * check parent term
+ */
+function check_parent($tid){
+    $query = db_select('taxonomy_term_hierarchy','th');
+    $query->fields('th');
+    $query->condition('tid',$tid);
+    $result = $query->execute()->fetchObject();
+    if($result){
+        if($result->parent==0){
+            return true;
+        }else{
+            return false;
+        }
+    }
+    return false;
+}
+/**
+ * Get parent
+ */
+function get_parent($tid){
+    $query = db_select('taxonomy_term_hierarchy','th');
+    $query->fields('th');
+    $query->condition('tid',$tid);
+    $result = $query->execute()->fetchObject();
+    if($result){
+        return taxonomy_term_load($result->parent);
+    }
+    return false;
+}
+
+function merc_global_field_extra_fields() {
+    $extra ['node']['product'] = array(
+        'display' => array(
+            'back_category' => array(
+                'label' => t('Back to category'),
+                'weight' => 0,
+            )
+        )
+    );
+
+    return $extra;
+}
+
+function merc_global_node_view($node, $view_mode, $langcode){
+    if($node->type=='product'){
+        $cateID = $node->field_category[LANGUAGE_NONE][0]['tid'];
+        $parent = get_parent($cateID);
+        if(!$parent){
+            $parent = taxonomy_term_load($cateID);
+        }
+        $output = '';
+        $output .='<div class="back-to-cate">';
+        $output .='<a href="'.url('taxonomy/term/'.$parent->tid).'">'.t('View other projects same category').' <b>'.$parent->name.'</b></a>';
+        $output .='</div>';
+
+        $node->content ['back_category'] = array(
+            '#markup' => $output,
+            '#weight' => 10,
+        );
+    }
+
+
+}
+
 
 

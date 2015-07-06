@@ -3,7 +3,6 @@
         <h2>Quản lý sản phẩm</h2>
         <ul>
             <li class="manage"><a href="/admin/structure/taxonomy/category">Danh mục dự án </a></li>
-            <li class="manage"><a href="/admin/structure/taxonomy/project_type">Loại dự án</a></li>
             <li class="manage"><a href="/admin/structure/taxonomy/year">Năm dự án</a></li>
             <li class="manage"><a href="/admin/products">Quản lý dự án </a></li>
             <li class="add"><a href="/node/add/product?destination=admin/products">Thêm dự án </a></li>
